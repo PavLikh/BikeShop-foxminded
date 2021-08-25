@@ -1,10 +1,10 @@
 # BikeShop-foxminded
 Task1.7  
-Create Bike shop. Создать магазин по продаже велосипедов.  
-Создаем HTML/CSS шаблон. Рекомендованная структура всего - шаблон из TASK 1.1 Create using “Holy Grail” web design layout  
-Рекомендованная структура для Main page - Product list page из TASK 1.4 Create Product List + Adaptive design
-Страница должна быть адаптивной под mobile устройства
-Header with image logo (на ваше усмотрение)
+-Create Bike shop. Создать магазин по продаже велосипедов.
+-Создаем HTML/CSS шаблон. Рекомендованная структура всего - шаблон из TASK 1.1 Create using “Holy Grail” web design layout
+-Рекомендованная структура для Main page - Product list page из TASK 1.4 Create Product List + Adaptive design
+-Страница должна быть адаптивной под mobile устройства
+-Header with image logo (на ваше усмотрение)
 Sidebar navigation menu with Home (main page), About us and Contact pages. Implement r
 Main page - Product list page
 Aside block (в будущем здесь будут размещены search form и inline calendar компоненты)
