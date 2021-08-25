@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Bike shop</title>
+	<script type="text/javascript">
+		function valid (form) {
+			var fail = false;
+			var name = form.name.value;
+			var email = form.email.value;
+			var password = form.pass1.value;
+			var conPassword = form.pass2.value;
+			var adr_patern = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/i;
+			if (name == "" || name == " ")
+				fail = "Insert name";
+			else if (adr_patern.test(email) == false)
+				fail = "Insert valid email";
+			else if (password == "")
+				fail = "Insert password";
+			else if (password != conPassword)
+				fail = "Password mismatch";
+			if (fail) {
+				alert (fail)
+			} else {
+				var account = {
+					name: name,
+					email: email,
+					password: password,
+				}
+				localStorage.setItem('account', JSON.stringify(account))
+				console.log(localStorage.getItem('account'));
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<a href="index.html"><h1>Bike shop</h1></a>
+	</header>
+	<div class="content">
+		<nav>
+			<div class="menu">
+				<div><a href="index.html">Home</a></div>
+				<div><a href="about.html">About us</a></div>
+				<div><a class="active"  href="">Contact pages</a></div>
+			</div>
+		</nav>
+		<main>
+			<form class="registration" action="" method="post" id="form">
+
+					<div>
+						<label for="name">Name:</label><input type="text" name="name" id="name">
+					</div>
+					<div>
+						<label for="email">Email:</label><input type="email" id="email">
+					</div>
+					<div>
+						<label for="pass1">Password:</label><input type="password" id="pass1">
+					</div>
+					<div>
+						<label for="pass2">Confirm password:</label><input type="password" id="pass2">
+					</div>
+				<input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Create account">
+			</form>
+		</main>
+		<aside><h4>Aside block</h4></aside>	
+	</div>
+	<footer>
+		<div class="copy">&copy; 2021 Bike shop</div>
+	</footer>
+</body>
+</html>

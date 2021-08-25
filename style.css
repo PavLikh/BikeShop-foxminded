@@ -11,6 +11,9 @@ body {
 
 header {
 	background-color: #336599;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 footer {
@@ -37,6 +40,18 @@ main {
 	padding: 5px;
 	min-height: 322px;
 	flex-grow: 1;
+}
+
+.registr {
+	margin-right: 20px;
+	background-color: #ff781e;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.registr:hover {
+	outline: 1px solid white;
 }
 
 .menu {
@@ -76,6 +91,24 @@ main {
 	box-shadow: -2px -1px 2px 0px #bababa;
 	font-weight: bold;
 	font-size: 17px;
+}
+
+.registration {
+	margin: auto;
+	text-align: center;
+}
+
+.registration div {
+	margin-bottom: 5px;
+
+}
+
+.registration label {
+	background-color: yellow;
+	background-color: #ffe2b8;
+	text-align: right;
+	display: inline-block;
+	width: 140px;
 }
 
 .catalog {
@@ -247,7 +280,7 @@ label {
 @media (min-width: 850px) {
 	header {
 		height: 60px;
-		line-height: 60px;
+		/*line-height: 60px;*/
 	}
 
 	.content {
