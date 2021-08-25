@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlxckeAX10RM-8_ElNEkjMsPKg2HAtXCs&callback=initMap" async defer></script>
+	<script>
+		let map;
+
+		function initMap() {
+  			map = new google.maps.Map(document.getElementById("map"), {
+    		center: { lat: -34.397, lng: 150.644 },
+    		zoom: 8,
+  			});
+		}
+	</script>
+	<title>Bike shop</title>
+</head>
+<body>
+	<header>
+		<a href="index.html"><h1>Bike shop</h1></a>
+	</header>
+	<div class="content">
+		<nav>
+			<div class="menu">
+				<div><a href="index.html">Home</a></div>
+				<div><a class="active" href="about.html">About us</a></div>
+				<div><a href="contact.html">Contact pages</a></div>
+			</div>
+		</nav>
+		<main>
+			<div id="map"></div>
+			<div>City<br> adress</div>
+		</main>
+		<aside><h4>Aside block</h4></aside>	
+	</div>
+	<footer>
+		<div class="copy">&copy; 2021 Bike shop</div>
+	</footer>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlxckeAX10RM-8_ElNEkjMsPKg2HAtXCs&callback=initMap" async defer></script>
+</body>
+</html>
